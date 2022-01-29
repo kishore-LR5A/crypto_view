@@ -23,17 +23,25 @@ function CoinList() {
           >
             Get Coins List
           </p>
-          <div className="flex flex-col justify-start text-white">
+          <div className="flex flex-col justify-start text-white min-w-[400px]">
             <h1 className="text-2xl font-serif font-bold">TechStack Used:</h1>
-            <ol className="font-semibold list-decimal cursor-pointer text-lg">
-              <li className="hover:underlline">
-                <a href="https://nextjs.org">Next.js (Reactjs)</a>
-              </li>
-              <li>
-                <a href="https://tailwindcss.com">TailwindCSS</a>{" "}
-              </li>
-              <li><a href="https://www.coingecko.com/en">Coingecko free public api for cryptocurrency data</a></li>
-            </ol>
+            <div className="relative">
+              <ul className="font-semibold list-decimal cursor-pointer text-lg absolute left-7">
+                <li className="hover:underline hover:decoration-2">
+                  <a href="https://nextjs.org">Next.js (Reactjs framework)</a>
+                </li>
+                <li className="hover:underline hover:decoration-2">
+                  <a href="https://tailwindcss.com">
+                    TailwindCSS (CSS framework)
+                  </a>{" "}
+                </li>
+                <li className="hover:underline hover:decoration-2">
+                  <a href="https://www.coingecko.com/en">
+                    Coingecko free public api for cryptocurrency data
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       )}
